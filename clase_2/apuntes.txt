@@ -1,0 +1,27 @@
+>>> 'hola mundo'.startswith('hola')
+True
+>>> 'hola mundo'.startswith('8888')
+False
+>>> 'hola mundo'.startswith('h')
+True
+>>> 'hola mundo'.startswith('ho')
+True
+>>> 'hola mundo'.startswith('ho3')
+False
+>>> 'hola mundo'.endswith('mundo')
+True
+>>> 'hola mundo'.endswith('o')
+True
+>>> 'hola mundo'.endswith('777')
+False
+>>> 'hola mundo'.endswith('Mundo')
+False
+>>> 'hola mundo'.endswith('undo')
+True
+>>> len('hola mundo')
+10
+>>> 'hola mundo'.count('o')
+2
+>>> 'hola mundo'.count('a')
+1
+>>> 'hola mundo'.count('a')
