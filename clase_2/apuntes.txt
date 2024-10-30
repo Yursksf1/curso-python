@@ -17,7 +17,7 @@ False
 >>> 'hola mundo'.endswith('Mundo')
 False
 >>> 'hola mundo'.endswith('undo')
-True
+True  
 >>> len('hola mundo')
 10
 >>> 'hola mundo'.count('o')
@@ -25,3 +25,10 @@ True
 >>> 'hola mundo'.count('a')
 1
 >>> 'hola mundo'.count('a')
+
+# remover espacios ejemplo
+>>> "estes es un texto con espacios   ".strip()
+'estes es un texto con espacios'
+>>> "  estes es un texto con espacios   ".replace(" ", "")
+'estesesuntextoconespacios'
+>>>
