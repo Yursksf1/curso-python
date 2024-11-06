@@ -56,7 +56,7 @@ agregar un nuevo atributo a la lista, que se llame "post-Navidad"
 para ordenar elementos de una lista usamos el metodo .sort()
 '''
 
-lista_desordenada = [1,8,1,2,6,3,5,4,8,7,2,6]
+lista_desordenada = [1,8,1,2,6,3,5,4,2, 8,7,2,6]
 print('lista_desordenada', lista_desordenada)
 
 lista_desordenada.sort()
@@ -98,3 +98,20 @@ definir una lista conformada unicamente de numeros,
 con una longitud minima de 15 elementos
 y deben hallar el promedio de los numeros ingresados
 """
+
+
+lista_desordenada = [1,8,1,2,6,3,5,4,2, 8,7,2,6]
+
+# contar
+print("se encuentra el numero 2 ",  lista_desordenada.count(2), "veces")
+print("se encuentra el numero 21 ",  lista_desordenada.count(21), "veces")
+
+# eliminar ultimo atributo
+print(lista_desordenada.pop())
+print('lista_desordenada', lista_desordenada)
+
+print(lista_desordenada.pop(1))
+print('lista_desordenada', lista_desordenada)
+
+# retorna el indice de un elemento en especifico
+print(lista_desordenada.index(2))
