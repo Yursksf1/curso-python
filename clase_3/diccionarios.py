@@ -73,3 +73,9 @@ sus nombre son {5} y {6}
 )
 
 print(mensaje)
+
+print("-------- imprimir el diccionarios ------ ")
+
+for key, value in persona.items():
+    
+    print(key, value)

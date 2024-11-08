@@ -115,3 +115,27 @@ print('lista_desordenada', lista_desordenada)
 
 # retorna el indice de un elemento en especifico
 print(lista_desordenada.index(2))
+
+
+nombres = [
+    "Andrea Beatriz Amezquita Araque",
+    "Antony javier Estrada Araujo",
+    "Brayan Enrique Silva Marquez",
+    "Carlos Andres Florez Ochoa",
+    "Carolina Bastidas Rincon",
+    "Daniel Camilo Orejarena Vanegas",
+    "Deivert Farick Blanco Marin",
+    "Didier Alexander Luengas Reyes",
+]
+
+nombre_a_buscar = "Brayan Enrique Silva Marquez"
+
+print(nombre_a_buscar in nombres)
+print(nombres.index(nombre_a_buscar))
+
+for nombre in nombres:
+    print("estoy buscando a Brayan...")
+    print(nombre)
+
+    if nombre == nombre_a_buscar:
+        break
