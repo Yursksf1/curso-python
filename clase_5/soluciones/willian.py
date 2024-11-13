@@ -31,13 +31,11 @@ Ejemplo
     • Daniel estuvo en el gimnasio 35 horas en el mes
         ◦ cuanto se le deberia cobrar?
 """
-clasificacion={"categoria":"bronce",
-                "valorhora":5000,
-                "categoria":"plata",
-                "valorhora":3500,
-                "categoria":"oro",
-                "valorhora":2000
-              }
+clasificacion={
+    "bronce": 5000,
+    "plata": 3500,
+    "oro": 2000
+}
 
 clientes={"codigo":[],"nombre":[],"horasconsumidas":[]}
 
@@ -67,19 +65,14 @@ while i<numeroclientes:
     horas=clientes.get("horasconsumidas")
     horas=horas[i]
     categoria = ""
-    total = 0
     if horas<=15:
-        categoria="bronce"
-        total=horas*5000
-    
+        categoria="bronce"  
     elif horas<=30: 
         categoria="plata"
-        total=horas*3500
-
     else: 
         categoria="oro"
-        total=horas*2000
-    
+
+    total =  horas * clasificacion.get(categoria, 0)
     facturacion["codigo"].append(codigo)
     facturacion["nombre"].append(nombre)
     facturacion["horasconsumidas"].append(horas) 
