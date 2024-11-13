@@ -55,16 +55,17 @@ while i<numeroclientes:
     clientes["horasconsumidas"].append(horas)	
     i=i+1
 
-print ("COIDGO"+"                       "+"NOMBRE"+"         "+"HORAS CONSUMIDAS"+"     "+"CATEGORIA"+"     "+"TOTALFACTURA")
+
+print("{:<{}} {:<{}} {:<{}} {:<{}} {:<{}}".format("COIDGO", 3, "NOMBRE", 20, "HORAS CONSUMIDAS", 5, "CATEGORIA", 8, "TOTAL FACTURA", 8))
 
 i=0
 while i<numeroclientes:
     codigo=clientes.get("codigo")
-    codigo=codigo[0]
+    codigo=codigo[i]
     nombre=clientes.get("nombre")
-    nombre=nombre[0]
+    nombre=nombre[i]
     horas=clientes.get("horasconsumidas")
-    horas=horas[0]
+    horas=horas[i]
     if horas>0 and horas<=15:
         facturacion["codigo"].append(codigo)
         facturacion["nombre"].append(nombre)
@@ -98,5 +99,7 @@ while i<numeroclientes:
     else:
         pass
    
-    print(codigo,"   ",nombre,"          ",horas,"                ",categoria,"                 ",total)
+    print("{:<{}} {:<{}} {:<{}} {:<{}} {:<{}}".format(codigo, 3, nombre, 20, horas, 5, categoria, 8, total, 8))
+
+    
     i=i+1
