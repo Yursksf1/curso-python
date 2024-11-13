@@ -66,39 +66,27 @@ while i<numeroclientes:
     nombre=nombre[i]
     horas=clientes.get("horasconsumidas")
     horas=horas[i]
-    if horas>0 and horas<=15:
-        facturacion["codigo"].append(codigo)
-        facturacion["nombre"].append(nombre)
-        facturacion["horasconsumidas"].append(horas) 
+    categoria = ""
+    total = 0
+    if horas<=15:
         categoria="bronce"
-        facturacion["categoria"].append(categoria)   
-        facturacion["valorhora"].append(5000)
         total=horas*5000
-        facturacion["total"].append(total)
     
-    elif horas>15 and horas<=30: 
-        facturacion["codigo"].append(codigo)
-        facturacion["nombre"].append(nombre)
-        facturacion["horasconsumidas"].append(horas) 
+    elif horas<=30: 
         categoria="plata"
-        facturacion["categoria"].append(categoria)   
-        facturacion["valorhora"].append(3500)
         total=horas*3500
-        facturacion["total"].append(total)      
 
-    elif horas>30: 
-        facturacion["codigo"].append(codigo)
-        facturacion["nombre"].append(nombre)
-        facturacion["horasconsumidas"].append(horas) 
+    else: 
         categoria="oro"
-        facturacion["categoria"].append(categoria)   
-        facturacion["valorhora"].append(3500)
         total=horas*2000
-        facturacion["total"].append(total)    
     
-    else:
-        pass
-   
+    facturacion["codigo"].append(codigo)
+    facturacion["nombre"].append(nombre)
+    facturacion["horasconsumidas"].append(horas) 
+    facturacion["categoria"].append(categoria)   
+    facturacion["valorhora"].append(3500)
+    facturacion["total"].append(total)  
+
     print("{:<{}} {:<{}} {:<{}} {:<{}} {:<{}}".format(codigo, 3, nombre, 20, horas, 5, categoria, 8, total, 8))
 
     
