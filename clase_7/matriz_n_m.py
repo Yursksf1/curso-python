@@ -1,3 +1,4 @@
+import random 
 lista =  [1,2,3,4]
 lista_1 =  [0,0,0,0]
 lista_2 =  [0,0,0,0]
@@ -34,6 +35,7 @@ contador_j = 0
 
 for vector in new_matriz:
     print(vector)
+print('')
 
 for vector in new_matriz:
     for elemento in vector:
@@ -43,5 +45,10 @@ for vector in new_matriz:
     contador_j = 0
     contador_i = contador_i + 1
 
+for vector in new_matriz:
+    print(vector)
+print('')
+
+new_matriz = [[random.randint(0,9) for _ in range(n_filas)] for _ in range(n_filas)]
 for vector in new_matriz:
     print(vector)
