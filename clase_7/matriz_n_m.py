@@ -1,4 +1,5 @@
 import random 
+
 lista =  [1,2,3,4]
 lista_1 =  [0,0,0,0]
 lista_2 =  [0,0,0,0]

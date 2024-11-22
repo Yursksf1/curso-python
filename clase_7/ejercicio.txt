@@ -1,0 +1,7 @@
+1. crear una funcion que permita contar cuantas palabras tiene la cancion en total
+2. crear una funcion que permita contar cuantas veces tiene una palabra especifica (sin tener en cuenta los caracteres especiales)
+3. responder: cuantas paralabras sin repeticion en total tiene la cancion, 
+4. cuantas veces se repite cada palabra. 
+5. cuales son las 5 palabras que se repiten mas
+6. cuales son las palabras que no se repiten 
+7. cuantas son las palabras que se repiten menos de 3 veces 
