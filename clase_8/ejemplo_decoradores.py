@@ -1,8 +1,8 @@
 
 def manejador_errores(funcion):
-    def wrapper(*args, ** kwargs):
+    def wrapper(*args, **kwargs):
         try:
-            resultado = funcion(*args, ** kwargs) # Llamada a la funcion original
+            resultado = funcion(*args, **kwargs) # Llamada a la funcion original
         except:
             resultado = "hubo un error"
         return resultado
