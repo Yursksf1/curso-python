@@ -1,0 +1,8 @@
+
+crear una funcion para solicitarle al usuario que ingrese el nombre 
+crear una funcion para solicitarle al usuario que ingrese el apellido 
+crear una funcion para solicitarle al usuario que ingrese la ciudad 
+
+crear un decorador para "limpiar la data" - elimine los espacios, returne lo que ingrese el usuario en mayuscula 
+
+
