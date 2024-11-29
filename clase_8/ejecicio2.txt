@@ -1,0 +1,10 @@
+crear un programa de preguntas abiertas, que el usuiario debe contestar
+se debe definir una estructura (lista o diccionario) para visualizar las preguntas
+y deben visualizar al finalizar el programa 
+
+las preguntas son:
+- que opina del alcalde de bucaramanga
+- cual es la mejor gestion que considera que se ha desarrollado en el gov
+- cual es la calle mas transitada en la ciudad 
+
+al finalizar el programa debe mostrar las respuestas y el tiempo que el usario demoro el contestar

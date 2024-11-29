@@ -7,7 +7,7 @@ def medir_tiempo(funcion):
         fin = time.time() # Momento en que se finaliza la ejecución de la función
         tiempo_transcurrido = fin - inicio
         print(f"La función {funcion.__name__} tardó {tiempo_transcurrido} segundos en ejecutarse.")
-        return resultado
+        return resultado, tiempo_transcurrido
     return wrapper
 
 @medir_tiempo
